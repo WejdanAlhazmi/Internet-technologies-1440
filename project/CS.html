@@ -1,127 +1,80 @@
+
+
 <!DOCTYPE html>
 <html>
-
 <head>
+  <meta charset="UTF-8"> 
+ 
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="flex-layout.css"> 
 
-    <link rel="stylesheet"
+  <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Cinzel">
-    <link rel="stylesheet"
+  <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Quicksand">
-    <link rel="stylesheet"
+  <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source Sans Pro">
 
-  <style>
+ 
+  <title>Computer Science</title> 
 
-    * {
-      box-sizing: border-box;
-    }
-
-    .header {
-      width: 100%;
-      font-family: 'Cinzel', serif;
-      font-size: 32px;
-      background: #46b7c5;
-      text-align: center;
-      text-transform: uppercase;   
-      border:1px solid black;
-    }
-
-    .subheader {
-      width: 100%;
-      font-family: 'Cinzel', serif;
-      font-size: 24px;
-      color: #333333;
-      background: #e0e0e0;
-      text-transform: uppercase;
-      border: 1px solid black;
-    }
-
-    .footer {
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: #616161;
-      color: #bdbdbd;
-      text-align: center;
-      font-size: 12px;
-      font-family: 'Source Sans Pro', serif;
-    }
-
-    .column {
-      float: left;
-      padding: 10px;
-      height: 300px; 
-    }
-
-    .left {
-      width: 30%;
-      text-align: center;
-    }
-
-    .right {
-      width: 70%;
-    }
-
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-  </style>
 </head>
+  
+  <body background= "background.jpg"> 
+ 
+    <header>
+      <img src="logo.png" alt="logo" style="float:right;width:100px;height:100px;">
+      <p>
+      computer library
+      </p>
+    </header>
 
-<body background= "background.jpg">
-
-  <div class="header">
-    <img src="logo.png" alt="logo" style="float:right;width:100px;height:100px;">
-    <p>
-    computer library
-    </p>
-  </div>
-
-  <div class="subheader">
-    Computer Science
-    <a href="file:///C:/Users/Ghaida/Desktop/Project/homePage.html" style="color:#333333;padding:10px 16px;text-decoration:none;float:right;margin:0;overflow:hidde;font-size: 12px;">Home</a>
-  </div>
-
-  <div class="row">
-    <p style="font-family:Quicksand"> Prominent books </p>
-
-    <div class="column left">
-
-      <table style="float:right">
-        <tr>
-          <td> <a href="https://labs.xjtudlc.com/labs/wldmt/reading%20list/books/Algorithms%20and%20optimization/Introduction%20to%20Algorithms.pdf"> <img src="algorithm.jpg" alt="Introduction to Algorithms" width="75" height="100"> </a> </td>
-          <td> <a href="http://www.uobabylon.edu.iq/download/M.S%202013-2014/Operating_System_Concepts,_8th_Edition%5BA4%5D.pdf"> <img src="operating system.jpg" alt="Operating System Concepts" width="75" height="100"></a></td>
-        </tr>
-
-        <tr>
-          <td><p style="font-family:Source Sans Pro;font-size:10px;"> Introduction to Algorithms </p></td>
-          <td><p style="font-family:Source Sans Pro;font-size:10px;"> Operating System Concepts </p></td>
-        </tr>
-
-        <tr>
-          <td> <a href="https://klevas.mif.vu.lt/~algis/dsax/Advanced%20Data%20Structures.pdf"> <img src="datastructure.jpg" alt="Advanced Data Structures" width="75" height="100"> </a> </td>
-          <td> <a href="http://ac.aua.am/arm/public/2017-spring-computer-organization/textbooks/ComputerOrganizationAndDesign5thEdition2014.pdf"> <img src="computer organization.jpg" alt="Computer Organization and Design" width="75" height="100"> </a> </td>
-        </tr>
-
-        <tr>
-          <td><p style="font-family:Source Sans Pro;font-size:10px;"> Advanced Data Structures </p></td>
-          <td><p style="font-family:Source Sans Pro;font-size:10px;"> Computer Organization and Design </p></td>
-        </tr>
-      </table>
+    <div class="subheader">
+      Computer Science
+      <a href="file:///C:/Users/Ghaida/Desktop/Project/homePage.html" style="color:#333333; padding:10px 16px; text-decoration:none; float:right; margin:0; overflow:hidde; font-size: 12px;">Home</a>
     </div>
 
-    <div class="column right">
-      <p style="font-family:Quicksand;" >This specialization is concerned with how to build systems suitable for different fields in life. This specialization is also concerned with how to communicate within networks, protect information and protect communication between networks. <br><br>The specialization of computer science always focuses on the systems, data and security, whether for networks or information and how to create algorithms to solve certain problems. <br><br>It solves complex problems by developing great solutions suitable using mathematical analysis and algorithms using programming languages and also focuses on how to protect a specific program or network.</p>
-    </div>
-  </div>
+ 
+    <section class="flex-container-central">
+      <menu>
+        <p style="font-family:Quicksand"> Prominent books </p>
+        <table style="float:center">
+          <tr>
+            <td> <a href="https://labs.xjtudlc.com/labs/wldmt/reading%20list/books/Algorithms%20and%20optimization/Introduction%20to%20Algorithms.pdf"> <img src="algorithm.jpg" alt="Introduction to Algorithms" width="75" height="100"> </a> </td>
+            <td> <a href="http://www.uobabylon.edu.iq/download/M.S%202013-2014/Operating_System_Concepts,_8th_Edition%5BA4%5D.pdf"> <img src="operating system.jpg" alt="Operating System Concepts" width="75" height="100"></a></td>
+          </tr>
 
-  <div class="footer">
+          <tr>
+            <td><p style="font-family:Source Sans Pro;font-size:10px;"> Introduction to Algorithms </p></td>
+            <td><p style="font-family:Source Sans Pro;font-size:10px;"> Operating System Concepts </p></td>
+          </tr>
+
+          <tr>
+            <td> <a href="https://klevas.mif.vu.lt/~algis/dsax/Advanced%20Data%20Structures.pdf"> <img src="datastructure.jpg" alt="Advanced Data Structures" width="75" height="100"> </a> </td>
+            <td> <a href="http://ac.aua.am/arm/public/2017-spring-computer-organization/textbooks/ComputerOrganizationAndDesign5thEdition2014.pdf"> <img src="computer organization.jpg" alt="Computer Organization and Design" width="75" height="100"> </a> </td>
+          </tr>
+
+          <tr>
+            <td><p style="font-family:Source Sans Pro;font-size:10px;"> Advanced Data Structures </p></td>
+            <td><p style="font-family:Source Sans Pro;font-size:10px;"> Computer Organization and Design </p></td>
+          </tr>
+        </table>
+      </menu>
+
+      <section class="flex-container-middle"> </section>
+
+
+      <article>
+        <br><br><br>
+        <p style="font-family:Quicksand;" >This specialization is concerned with how to build systems suitable for different fields in life.<br> This specialization is also concerned with how to communicate within networks,<br> protect information and protect communication between networks. <br><br>The specialization of computer science always focuses on the systems, data and security,<br> whether for networks or information and how to create algorithms to solve certain problems. <br><br>It solves complex problems by developing great solutions suitable using mathematical analysis and algorithms<br> using programming languages and also<br> focuses on how to protect a specific program or network.</p>
+      </article>
+    </section>
+
+  </section> 
+
+  <footer>
     <p> &copy; 2019 Wejdan Alhazmi, Ghaida Alharbi </p>
-  </div>
-
-</body>
-</html> 
+  </footer>
+ 
+  </body> 
+</html>

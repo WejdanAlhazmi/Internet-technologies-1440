@@ -1,83 +1,37 @@
 
+
 <!DOCTYPE html>
 <html>
-
 <head>
+  <meta charset="UTF-8"> 
+ 
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="flex-layout.css"> 
 
-    <link rel="stylesheet"
+  <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Cinzel">
-    <link rel="stylesheet"
+  <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Quicksand">
-    <link rel="stylesheet"
+  <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source Sans Pro">
 
-  <style>
+ 
+  <title>Computer Library</title> 
 
-    .header {
-      width: 100%;
-      font-family: 'Cinzel', serif;
-      font-size: 32px;
-      background: #46b7c5;
-      text-align: center;
-      text-transform: uppercase;   
-      border:1px solid black;
-    }
-
-
-    .footer {
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: #616161;
-      color: #bdbdbd;
-      text-align: center;
-      font-size: 12px;
-      font-family: 'Source Sans Pro', serif;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    .column {
-      float: left;
-      padding: 10px;
-      height: 300px; 
-    }
-
-    .left {
-      width: 35%;
-    }
-
-    .right {
-      width: 65%;
-    }
-
-    .row {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-  </style>
 </head>
+  
+  <body background= "background.jpg"> 
+ 
+    <header>
+      <img src="logo.png" alt="logo" style="float:right;width:100px;height:100px;">
+      <p>
+      computer library
+      </p>
+    </header>
 
-
-
-<body background= "background.jpg">
-
-  <div class="header">
-    <img src="logo.png" alt="logo" style="float:right;width:100px;height:100px;">
-    <p>
-    computer library
-    </p>
-  </div>
-
-  <div class="row">
-    <div class="column left">
-      <br><br><br><br><br>
-      <center>
+    <section class="flex-container-central">
+      <menu>
+        <br><br><br><br><br>
         <a href="file:///C:/Users/Ghaida/Desktop/Project/CS.html">
           <button type="button" style="width:211px;height:45px;">Computer Science</button>
         </a>
@@ -85,18 +39,21 @@
         <a href="file:///C:/Users/Ghaida/Desktop/Project/IS.html">
           <button type="button" style="width:211px;height:45px;">Information System</button>
         </a>
-      </center>
-    </div>
+      </menu>
 
-    <div class="column right">
-      <br><br><br>
-      <p style="font-family:Quicksand;" >A computer is a device that can be instructed to carry out sequences of arithmetic or logical operations automatically via computer programming. <br><br>Modern computers have the ability to follow generalized sets of operations, called programs. <br><br>These programs enable computers to perform an extremely wide range of tasks. <br><br>A "complete" computer including the hardware, the operating system (main software), and peripheral equipment required and used for "full" operation can be referred to as a computer system.</p>
-    </div>
-  </div>
+      <section class="flex-container-middle"> </section>
 
-  <div class="footer">
+
+      <article>
+        <br><br><br>
+        <p style="font-family:Quicksand;" >A computer is a device that can be instructed to carry out sequences of arithmetic or logical operations automatically<br> via computer programming. <br><br>Modern computers have the ability to follow generalized sets of operations, called programs. <br><br>These programs enable computers to perform an extremely wide range of tasks. <br><br>A "complete" computer including the hardware, the operating system (main software), and peripheral equipment required and<br> used for "full" operation can be referred to as a computer system.</p>
+      </article>
+    </section>
+  </section> 
+
+  <footer>
     <p> &copy; 2019 Wejdan Alhazmi, Ghaida Alharbi </p>
-  </div>
-
-</body>
-</html> 
+  </footer>
+ 
+  </body> 
+</html>
